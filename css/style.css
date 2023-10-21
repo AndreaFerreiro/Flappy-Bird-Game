@@ -1,7 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+}
+
 .game-container{
     width: 500px;
     height: 730px;
     position: absolute;
+    left: 80px;
+}
+.borderLeft {
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+}
+.borderRight {
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    left: 580px;
+}
+.borderTop{
+    width: 660px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    top: -50px;
 }
 .sky{
     background-image: url(../images/backgroung.png);
@@ -15,6 +47,7 @@
     height: 150px;
     position: absolute;
     top: 580px;
+    z-index: +1;
 }
 .bird{
     width: 60px;
@@ -35,3 +68,39 @@
     height: 300px;
     position: absolute;
 }
+@keyframes slideright {
+    from {
+        background-position: 10000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+  
+  @-webkit-keyframes slideright {
+    from {
+        background-position: 10000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+
+  .ground-container {
+      height: 150px;
+      width: 580px;
+      left: 80px;
+      position:  absolute;
+  }
+  
+  .ground-moving {
+    position: absolute;
+    top: 580px;
+    height: 150px;
+    background-image: url('bottom-background.png');
+    background-repeat: repeat-x;
+    animation: slideright 100s infinite linear;
+    -webkit-animation: slideright 100s infinite linear;
+    width: 100%;
+    z-index: +1;
+  }
