@@ -4,13 +4,13 @@
     position: absolute;
 }
 .sky{
-    background-color: lightblue;
+    background-image: url(../images/backgroung.png);
     width: 500px;
     height: 580px;
     position: absolute;
 }
 .ground{
-    background-color: brown;
+    background-image: url(../images/bottom.png);
     width: 500px;
     height: 150px;
     position: absolute;
@@ -20,10 +20,17 @@
     width: 60px;
     height: 45px;
     position: absolute;
-    background-color: yellow;
+    background-image: url(../images/bird.png);
 }
 .obstacle {
-    background-color: green;
+    background-image: url(../images/obstacle.png);
+    width: 60px;
+    height: 300px;
+    position: absolute;
+}
+.topObstacle {
+    background-image: url(../images/obstacle.png);
+    transform: rotate(180deg);
     width: 60px;
     height: 300px;
     position: absolute;
