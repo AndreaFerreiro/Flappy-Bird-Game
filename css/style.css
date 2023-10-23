@@ -19,15 +19,15 @@ body{
     left: 31%;
 }
 .borderLeft {
-    width: 80px;
-    height: 790px;
+    width: 100px;
+    height: 800px;
     position: absolute;
     background-color: rgba(168, 170, 175, 2);
     z-index: +2;
     margin-left: 25%;
 }
 .borderRight {
-    width: 80px;
+    width: 105px;
     height: 790px;
     position: absolute;
     background-color: rgba(168, 170, 175, 2);
