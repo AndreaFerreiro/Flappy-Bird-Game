@@ -1,10 +1,10 @@
 # Individual project: Flappy Bird Game
 
 ## Summary
-
+Make the bird jump to avoid the pipelines
 
 ## How it works
-This project is still in process...
+Press SPACE to jump
 
 ## Owner: 👩🏻‍💻
 
